@@ -18,7 +18,7 @@ public class Analyzer {
         StringReader stringReader=new StringReader(text);
         IKSegmenter ikSegmenter=new IKSegmenter(stringReader,true);
         Lexeme lex;
-        List<String> list=new ArrayList<>();
+        List<String> list=new ArrayList<String>();
         while((lex=ikSegmenter.next())!=null){
             list.add(lex.getLexemeText());
         }
